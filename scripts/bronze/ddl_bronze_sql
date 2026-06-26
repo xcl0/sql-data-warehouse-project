@@ -40,9 +40,9 @@ create table bronze.crm_prd_info (
 );
 
 
-if object_id ('bronze.crm_sales_detail', 'U') is not null
-	drop table bronze.crm_sales_detail;
-create table bronze.crm_sales_detail (
+if object_id ('bronze.crm_sales_details', 'U') is not null
+	drop table bronze.crm_sales_details;
+create table bronze.crm_sales_details (
 	sls_ord_num nvarchar(50),
 	sls_prd_key nvarchar(50),
 	sls_cust_id int,
@@ -50,7 +50,7 @@ create table bronze.crm_sales_detail (
 	sls_ship_dt int,
 	sls_due_dt int,
 	sls_sales int,
-	sls_quntity int,
+	sls_quantity int,
 	sls_price int
 );
 
@@ -62,7 +62,6 @@ create table bronze.erp_cust_az12 (
 	bdate date,
 	gen nvarchar(50)
 );
-
 
 if object_id ('bronze.erp_loc_a101', 'U') is not null
 	drop table bronze.erp_loc_a101;
