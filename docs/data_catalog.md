@@ -20,8 +20,8 @@
 -Purpose: Provides information about the products and their attributes.
 -Columns
 
-Column Name	Data Type	Description
-|----------|---------|-----------|
+| Column Name | Data Type | Description |
+|-------------|-----------|-------------|
 product_key	INT	Surrogate key uniquely identifying each product record in the product dimension table.
 product_id	INT	A unique identifier assigned to the product for internal tracking and referencing.
 product_number	NVARCHAR(50)	A structured alphanumeric code representing the product, often used for categorization or inventory.
